@@ -9,7 +9,7 @@
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Custom Css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,8 +24,8 @@
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
         </nav>
      </header> 
 
@@ -34,8 +34,8 @@
         <div class="home-content">
           <h3>Hello, It's Me</h3>
           <h1>Frager201</h1>
-          <h3>And Im a <span>Frontend Developer</span></h3>
-          <p>Hello I am Frager201 I am a Frontend Developer Thank you for being on my website click About more button to reed more about me.
+          <h3>And Im a <span class="mutliple"></span></h3>
+          <p>Hello I am Frager201 I am a Frontend Developer Thank you for being on my website click About more button to read more about me.
           </p>
           <div class="Social-media">
              <a href="https://www.twitch.tv/frager201"><i class='bx bxl-twitch' ></i></a>
@@ -72,15 +72,129 @@
      <!-- services section design  -->
      <section class="services" id="services">
        <h2 class="heading">Our <span>Services</span></h2>
+       <div class="services-container">
+         <div class="services-box">
+           <i class='bx bx-code-alt'></i>
+           <h3>Web Development Package 1</h3>
+           <p>I will make a custom home page for you Website</p>
+           <a href="#" class="btn">Read More</a>
+         </div>
+  
+         <div class="services-box">
+           <i class='bx bx-code-alt'></i>
+           <h3>Web Development Package 2</h3>
+           <p>I will make a custom 6 page website your you</p>
+           <a href="#" class="btn">Read More</a>
+         </div>
+  
+         <div class="services-box">
+           <i class='bx bx-code-alt'></i>
+           <h3>Web Development Custom Package</h3>
+           <p>I will make a custom website how much pages you want</p>
+           <a href="#" class="btn">Read More</a>
+         </div>
+       </div>
      </section>
 
-     <div class="services-container">
-       <div class="services-box">
-         <i class='bx bx-code-alt'></i>
-         <h3>Web Developer</h3>
-       </div>
-     </div>
+     <!-- Portfolio Section Design -->
+      <section class="portfolio" id="portfolio">
+         <h2 class="heading">Latest <span>Projects</span></h2>
+
+         <div class="portfolio-container">
+            <div class="portfolio-box">
+               <img src="imgs/Img1.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Flappy Bird</h4>
+                  <p>Flappy Bird made by me using html css javascript just a knockoff.</p>
+                  <a href="https://flappy-bird.frager201.repl.co"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+
+            <div class="portfolio-box">
+               <img src="imgs/Img2.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Falling Game</h4>
+                  <p>A game that you have to make the ball fall through the whole made by html css javascript.</p>
+                  <a href="https://falling-game.frager201.repl.co"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+
+            <div class="portfolio-box">
+               <img src="imgs/Img3.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Dinosaur Run</h4>
+                  <p>A knockoff from Dinosaur Run I made Made by Html Css Javascript.</p>
+                  <a href="https://dinasour-run.frager201.repl.co"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+
+            <div class="portfolio-box">
+               <img src="imgs/Img4.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Calculator</h4>
+                  <p>A functioning Calculator Made by html css and javascript.</p>
+                  <a href="https://calculator-jh79.onrender.com/"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+
+            <div class="portfolio-box">
+               <img src="imgs/Img5.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Octopi Website</h4>
+                  <p>A website for a team from Swordbattle.io I made</p>
+                  <a href="https://octopi-7lcw.onrender.com/"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+
+            <div class="portfolio-box">
+               <img src="imgs/Img6.png" alt="">
+               <div class="portfolio-layer">
+                  <h4>Heart Rate recorder</h4>
+                  <p>A website that will take the data from this website and send to google sheets</p>
+                  <a href="https://gymheartrate.onrender.com/"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- contact section design -->
+      <section class="contact" id="contact">
+         <h2 class="heading">Contact <span>Me!</span></h2>
+
+         <form action="https://formsubmit.co/ttvfrager201@outlook.com" method="POST">
+           <div class="input-box">
+             <input type="text" placeholder="Full name"required>
+             <input type="email" placeholder="Email Address"required>
+           </div>
+           <div class="input-box">
+            <input type="number" placeholder="Mobile Number"required>
+            <input type="text" placeholder="Email Subject" required>
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
+         </form>
+      </section>
+
+      <!-- Footer Design -->
+      <footer class="footer">
+         <div class="footer-text">
+            <p>Copyright &copy; 2023 by Frager201 | All Rights Reserved</p>
+         </div>
+
+         <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+         </div>
+      </footer>
+
+      <!--Scroll Reveal-->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!-- Typed.js -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+      <!-- Send email from javascript -->
+    
     <!--Custon Js.Script-->
-   <script src="script.js"></script>
+   <script src="Js/script.js"></script>
 </body>
 </html>
